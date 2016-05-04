@@ -16,3 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/location'     ,'APIController@location');
+Route::get('/location/{id}'     ,'APIController@locationDetail');
+Route::get('/menu/{id}'     ,'APIController@menu');
