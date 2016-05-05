@@ -18,198 +18,264 @@ class MenusSeeder extends Seeder
                 'name' => "Món ăn 1",
                 'restaurant_id' => "1",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "1",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "1",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "2",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "2",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "2",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "3",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "3",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "3",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "4",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "4",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "4",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "5",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "5",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "5",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "6",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "6",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "6",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "7",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "7",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "7",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "8",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "8",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "8",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "9",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "9",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "9",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "10",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "10",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "10",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "10000",
                 'name' => "Món ăn 1",
                 'restaurant_id' => "11",
                 'path' => "https://i.imgur.com/mBEMIRS.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "20000",
                 'name' => "Món ăn 2",
                 'restaurant_id' => "11",
                 'path' => "https://i.imgur.com/DEo4Csx.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'price' => "30000",
                 'name' => "Món ăn 3",
                 'restaurant_id' => "11",
                 'path' => "https://i.imgur.com/ec4ZpVO.jpg",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             )
         ));
     }

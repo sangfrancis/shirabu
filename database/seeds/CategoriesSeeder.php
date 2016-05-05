@@ -14,54 +14,104 @@ class CategoriesSeeder extends Seeder {
         DB::table('categories')->insert(array(
             array(
                 'name' => "Cà phê",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'access_token' => "Quán ăn tự phục vụ",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Quán ăn tự phục vụ",
             ),
             array(
-                'access_token' => "Nhà hàng",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Nhà hàng",
             ),
             array(
-                'access_token' => "Quán ăn",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Quán ăn",
             ),
             array(
-                'access_token' => "Bar",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Bar",
             ),
             array(
-                'access_token' => "Pub",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Pub",
             ),
             array(
-                'access_token' => "Quán giải khát",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Quán giải khát",
             ),
             array(
-                'access_token' => "Quán vỉa hè",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Quán vỉa hè",
             ),
             array(
-                'access_token' => "Quán chay",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Quán chay",
             ),
             array(
-                'access_token' => "Tiệm bánh",//10
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Tiệm bánh",//10
             ),
             array(
-                'access_token' => "Quán ăn nhỏ",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Quán ăn nhỏ",
             ),
             array(
-                'access_token' => "Quán nhậu",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "Quán nhậu",
             ),
             array(
-                'access_token' => "",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "",
             ),
             array(
-                'access_token' => "",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "",
             ),
             array(
-                'access_token' => "",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "",
             ),
             array(
-                'access_token' => "",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "",
             ),
             array(
-                'access_token' => "",
+                
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03',
+                'name' => "",
             ),
                 )
         );

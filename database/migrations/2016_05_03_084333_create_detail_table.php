@@ -14,6 +14,13 @@ class CreateDetailTable extends Migration
     {
         Schema::create('details', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('capacity');
+            $table->string('prepare');
+            $table->string('holiday');
+            $table->string('special');
+            $table->string('style');
+            $table->string('facility');
+            $table->unsignedInteger('restaurant_id');
             $table->timestamps();
         });
     }

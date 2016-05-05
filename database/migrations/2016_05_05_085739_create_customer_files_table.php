@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateArticleTable extends Migration
+class CreateCustomerFilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,12 +12,9 @@ class CreateArticleTable extends Migration
      */
     public function up()
     {
-        Schema::create('articles', function (Blueprint $table) {
+        Schema::create('customer_files', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('author');
-            $table->string('title');
-            $table->string('body');
-            $table->unsignedInteger('restaurant_id');
+            $table->unsignedInteger('customer_id');
             $table->string('path');
             $table->timestamps();
         });
@@ -30,6 +27,6 @@ class CreateArticleTable extends Migration
      */
     public function down()
     {
-        Schema::drop('articles');
+        Schema::drop('customer_files');
     }
 }

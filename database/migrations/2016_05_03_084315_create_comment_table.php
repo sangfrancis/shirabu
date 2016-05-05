@@ -14,6 +14,10 @@ class CreateCommentTable extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
+            $table->unsignedInteger('customer_id');
+            $table->unsignedInteger('restaurant_id');
+            $table->string('body');
+            $table->integer('like');
             $table->timestamps();
         });
     }

@@ -17,12 +17,16 @@ class LoginsSeeder extends Seeder {
                 'password' => "12345",
                 'refresh_token' => "111111111111111111",
                 'customer_id' => "1",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
                 'access_token' => "11111111111111111111",
                 'password' => "12345",
                 'refresh_token' => "22222222222222222",
-                'customer_id' => "2",))
+                'customer_id' => "2",
+                'created_at' => '2016-04-06 09:23:03',
+                'updated_at' => '2016-04-06 09:23:03'))
         );
     }
 

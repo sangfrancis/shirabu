@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class RestaurantCategoriesSeeder extends Seeder
+class CommentsSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,129 +11,128 @@ class RestaurantCategoriesSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('restaurant_category')->truncate();
-        DB::table('restaurant_category')->insert(array(
+        DB::table('comments')->truncate();
+        DB::table('comments')->insert(array(
             array(
+                'customer_id' => "1",
                 'restaurant_id' => "1",
-                'category_id' => "2",
+                'body' => "Ngon thật!",
+                'like' => "100",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
+                'customer_id' => "1",
                 'restaurant_id' => "2",
-                'category_id' => "3",
+                'body' => "Ngon",
+                'like' => "999",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
+                'customer_id' => "1",
                 'restaurant_id' => "3",
-                'category_id' => "1",
+                'body' => "Bình thường",
+                'like' => "1041",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "4",
-                'category_id' => "1",
-                'created_at' => '2016-04-06 09:23:03',
-                'updated_at' => '2016-04-06 09:23:03'
-            ),
-            array(
+                'customer_id' => "1",
                 'restaurant_id' => "5",
-                'category_id' => "4",
+                'body' => "Tưởng ngon lắm chớ. Đến ăn rồi mới biết ngon thiệt",
+                'like' => "10",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "6",
-                'category_id' => "4",
+                'customer_id' => "2",
+                'restaurant_id' => "5",
+                'body' => "Ngon",
+                'like' => "0",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "7",
-                'category_id' => "9",
+                'customer_id' => "2",
+                'restaurant_id' => "2",
+                'body' => "Dở ẹc",
+                'like' => "0",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "8",
-                'category_id' => "4",
+                'customer_id' => "2",
+                'restaurant_id' => "2",
+                'body' => "Ahihi Đồ ngốc",
+                'like' => "1",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "9",
-                'category_id' => "10",
+                'customer_id' => "1",
+                'restaurant_id' => "11",
+                'body' => "Tỉ dở",
+                'like' => "1",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
+                'customer_id' => "1",
                 'restaurant_id' => "10",
-                'category_id' => "12",
+                'body' => "Thấy gớm ri mà ai cũng khen",
+                'like' => "1",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "",
-                'category_id' => "",
+                'customer_id' => "1",
+                'restaurant_id' => "1",
+                'body' => "Ngon bung lụa",
+                'like' => "1",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "",
-                'category_id' => "",
+                'customer_id' => "2",
+                'restaurant_id' => "1",
+                'body' => "CŨng tạm thôi sao mày khen lắm thế",
+                'like' => "1",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "",
-                'category_id' => "",
+                'customer_id' => "1",
+                'restaurant_id' => "6",
+                'body' => "Ọe!!!",
+                'like' => "10",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "",
-                'category_id' => "",
+                'customer_id' => "2",
+                'restaurant_id' => "9",
+                'body' => "Cũng được thôi mà sao ai cũng khen m thấy ghê",
+                'like' => "1",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "",
-                'category_id' => "",
+                'customer_id' => "2",
+                'restaurant_id' => "4",
+                'body' => "Ừ cũng tạm tạm",
+                'like' => "1",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
             ),
             array(
-                'restaurant_id' => "",
-                'category_id' => "",
+                'customer_id' => "1",
+                'restaurant_id' => "7",
+                'body' => "Ngon Ngon Ngon Ngon Ngon ",
+                'like' => "2",
                 'created_at' => '2016-04-06 09:23:03',
                 'updated_at' => '2016-04-06 09:23:03'
-            ),
-            array(
-                'restaurant_id' => "",
-                'category_id' => "",
-                'created_at' => '2016-04-06 09:23:03',
-                'updated_at' => '2016-04-06 09:23:03'
-            ),
-            array(
-                'restaurant_id' => "",
-                'category_id' => "",
-                'created_at' => '2016-04-06 09:23:03',
-                'updated_at' => '2016-04-06 09:23:03'
-            ),
-            array(
-                'restaurant_id' => "",
-                'category_id' => "",
-                'created_at' => '2016-04-06 09:23:03',
-                'updated_at' => '2016-04-06 09:23:03'
-            ),
-            array(
-                'restaurant_id' => "",
-                'category_id' => "",
-                'created_at' => '2016-04-06 09:23:03',
-                'updated_at' => '2016-04-06 09:23:03'
-            ),
-                )
-        );
+            )
+        ));
     }
 }
