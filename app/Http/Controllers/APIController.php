@@ -53,7 +53,15 @@ class APIController extends Controller
             "code" => 200,
             "message" => "OK"
         );
+        $type = "";
+        foreach ($restaurant->category as $category) {
+            if ($type == "") {
+                $type = $category->name;
+            } else 
+            $type = $type.", ".$category->name;
+        }
         $return_arr['id']  = $restaurant->id;
+        $return_arr['type']  = $type;
         $return_arr['name']  = $restaurant->name;
         $return_arr['address']  = $restaurant->address;
         $return_arr['tel']  = $restaurant->tel;
