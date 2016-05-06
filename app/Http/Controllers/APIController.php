@@ -180,6 +180,24 @@ class APIController extends Controller
         $data["comments"] = $return_arr;
         echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     }
+    public function commentSave($id, Request $r)
+    {
+        $data = Input::get();
+        $fillData = array ('body' => $data['body'], 
+                           'customer_id' => $data['customer_id'], 
+                           'restaurant_id' => $id, 
+                           'like' => $data['like'] 
+                           );
+        $comment = new Comment();
+        $comment->fill($fillData);
+        $comment->save();
+
+        $data["result"]   = array(
+            "code" => 200,
+            "message" => "OK"
+        );
+        echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    }
     public function badRequest()
     {
         $returnData["result"] = array(
