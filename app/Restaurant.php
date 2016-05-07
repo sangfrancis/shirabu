@@ -11,4 +11,8 @@ class Restaurant extends Eloquent
 	{
 		return $this->belongsToMany('App\Category','restaurant_category');
 	}
+	public function file()
+	{
+		return $this->hasMany('App\RestaurantFile');
+	}
 }

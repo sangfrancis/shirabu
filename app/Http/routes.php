@@ -22,4 +22,6 @@ Route::get('/article'     ,'APIController@article');
 Route::get('/article/{id}'     ,'APIController@articleDetail');
 Route::get('/detail/{id}'     ,'APIController@detail');
 Route::get('/comment/{id}'     ,'APIController@comment');
+Route::get('/restaurant/new'     ,'APIController@newRestaurant');
+Route::get('/restaurant/point'     ,'APIController@pointRestaurant');
 Route::post('/comment/{id}'     ,'APIController@commentSave');

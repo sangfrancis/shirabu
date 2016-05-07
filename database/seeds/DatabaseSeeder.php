@@ -23,5 +23,7 @@ class DatabaseSeeder extends Seeder
         $this->call(DetailsSeeder::class);
         $this->call(CustomerFilesSeeder::class);
         $this->call(CommentsSeeder::class);
+        $this->call(RestaurantFilesSeeder::class);
+        $this->call(RestaurantPointsSeeder::class);
     }
 }

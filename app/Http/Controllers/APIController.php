@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Location;
 use App\Restaurant;
+use App\RestaurantPoint;
 use App\Article;
 use App\Comment;
 use App\Customer;
@@ -20,14 +21,13 @@ use Illuminate\Support\Facades\View;
 
 class APIController extends Controller
 {
-	public function location(Request $r)
+    public function location(Request $r)
     {
-    	$lat = $r->get('lat');
-    	$lng = $r->get('lng');
-    	$distance = 10;
-    	$query = "SELECT *, SQRT( POW(69.1 * (lat - $lat), 2) + POW(69.1 * ($lng - lng) * COS(lat / 57.3), 2)) AS distance FROM locations HAVING distance <= 1 ORDER BY distance";
-    	$results = DB::select(DB::raw($query));
-    	$return_arr = array();
+        $lat = $r->get('lat');
+        $lng = $r->get('lng');
+        $query = "SELECT *, SQRT( POW(69.1 * (lat - $lat), 2) + POW(69.1 * ($lng - lng) * COS(lat / 57.3), 2)) AS distance FROM locations HAVING distance <= 5 ORDER BY distance";
+        $results = DB::select(DB::raw($query));
+        $return_arr = array();
         foreach ($results as $result) {
             $row_array['restaurant_id']  = $result->id;
             $row_array['restaurant_name'] = Location::find($result->id)->restaurant->name;
@@ -41,6 +41,53 @@ class APIController extends Controller
             "message" => "OK"
         );
         $data["locations"] = $return_arr;
+        echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    }
+    public function newRestaurant()
+    {
+        $restaurant = Restaurant::orderBy('created_at','decs')->limit(6)->get();
+        $return_arr = array();
+        foreach ($restaurant as $result) {
+            $row_array['restaurant_id']  = $result->id;
+            $row_array['name']  = $result->name;
+            $row_array['path']  = $result->file->first()->path;
+            array_push($return_arr, $row_array);
+        }
+        $data["result"]   = array(
+            "code" => 200,
+            "message" => "OK"
+        );
+        $data["restaurants"] = $return_arr;
+        echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    }
+    public function pointRestaurant()
+    {
+        $restaurant = RestaurantPoint::groupBy('restaurant_id')
+                               ->selectRaw('sum(point) as sum, restaurant_id')
+                               ->orderBy('sum','decs')->limit(6)
+                               ->pluck('sum','restaurant_id');
+        // RestaurantPoint::groupBy('restaurant_id')->selectRaw('restaurant_points, sum(point) as sum');
+                               // dd($restaurant);
+        $return_arr = array();
+        foreach ($restaurant as $key => $value) {
+            
+        // for ($i=0; $i < $restaurant->count() ; $i++) { 
+        //      dd((object)$restaurant);
+         
+            // dd($result);
+            $row_array['restaurant_id']  = Restaurant::find($key)->id;
+            $row_array['name']  = Restaurant::find($key)->name;
+            $row_array['path']  = Restaurant::find($key)->file->first()->path;
+                                // dd($result);
+            $row_array['sum']  = $value;
+            // $row_array['path']  = $result->restaurant->file->first()->path;
+            array_push($return_arr, $row_array);
+        }
+        $data["result"]   = array(
+            "code" => 200,
+            "message" => "OK"
+        );
+        $data["restaurants"] = $return_arr;
         echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     }
     public function locationDetail($id)
@@ -69,7 +116,14 @@ class APIController extends Controller
         $return_arr['close']  = $restaurant->close;
         $return_arr['price_from']  = $restaurant->price_from;
         $return_arr['price_to']  = $restaurant->price_to;
+        $return_arr_file = array();
+        foreach ($restaurant->file as $result) {
+            $row_array['restaurant_id']  = $id;
+            $row_array['path']   = $result->path;
+            array_push($return_arr_file, $row_array);
+        }
         $data["locations"] = $return_arr;
+        $data["locations_files"] = $return_arr_file;
         echo json_encode($data, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     }
     public function menu($id)
@@ -80,7 +134,7 @@ class APIController extends Controller
         }
         $return_arr = array();
         foreach ($menu as $result) {
-            $row_array['restaurant_id']  = $result->id;
+            $row_array['restaurant_id']  = $id;
             $row_array['name'] = $result->name;
             $row_array['price']                     = $result->price;
             $row_array['path']                   = $result->path;
@@ -98,7 +152,7 @@ class APIController extends Controller
         $restaurant_id = 0;
         if (!is_null($r->get('restaurant_id'))) {
             $restaurant_id = $r->get('restaurant_id');
-        $article = Article::where('restaurant_id',$restaurant_id)->orderBy('id','desc')->limit(2)->get();
+        $article = Article::where('restaurant_id',$restaurant_id)->orderBy('id','desc')->limit(4)->get();
         } else {
         $article = Article::orderBy('id','desc')->limit(4)->get();
         }
@@ -109,8 +163,9 @@ class APIController extends Controller
         foreach ($article as $result) {
             $row_array['restaurant_id']  = $result->restaurant_id;
             $row_array['id']  = $result->id;
-            // $row_array['author'] = $result->author;
-            // $row_array['title']                     = $result->title;
+            $row_array['author'] = $result->author;
+            $row_array['title']                     = $result->title;
+            $row_array['created_at']                     = $result->created_at->format('Y-m-d');
             // $row_array['body']                     = $result->body;
             $row_array['path']                   = $result->path;
             array_push($return_arr, $row_array);
