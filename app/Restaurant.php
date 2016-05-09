@@ -15,4 +15,9 @@ class Restaurant extends Eloquent
 	{
 		return $this->hasMany('App\RestaurantFile');
 	}
+
+	public function location()
+	{
+		return $this->hasOne('App\Location');
+	}
 }

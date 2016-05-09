@@ -109,6 +109,8 @@ class APIController extends Controller
         }
         $return_arr['id']  = $restaurant->id;
         $return_arr['type']  = $type;
+        $return_arr['lat']  = $restaurant->location->lat;
+        $return_arr['lng']  = $restaurant->location->lng;
         $return_arr['name']  = $restaurant->name;
         $return_arr['address']  = $restaurant->address;
         $return_arr['tel']  = $restaurant->tel;
